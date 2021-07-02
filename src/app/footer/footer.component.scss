@@ -1,0 +1,101 @@
+.footer {
+  background-color: hsl(191, 79%, 45%);
+
+
+  .footer-row {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+
+    .grid-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 100%;
+
+
+      .copy {
+        display: flex;
+        align-items: center;
+        font-size: 110%;
+        font-weight: 400;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          padding: 0 1rem 0 1rem;
+          font-size: 1.5rem;
+        }
+        .fb:hover {
+          color: #4267B2;
+          cursor: pointer;
+        }
+
+        .ins:hover {
+          color: #c13584;
+          cursor: pointer;
+        }
+
+        .yt:hover {
+          color: #FF0000;
+          cursor: pointer;
+        }
+
+        .in:hover {
+          color: #2867b2;
+          cursor: pointer;
+        }
+
+        .git:hover {
+          color: #6cc644;
+          cursor: pointer;
+        }
+      }
+
+      .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        li {
+          list-style: none;
+          padding: 0.5rem 0 0.5rem 0;
+          a {
+            text-decoration: none;
+            &:hover {
+              text-shadow: 1px 1px 1px #fff;
+          }
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and(max-width: 614px) {
+  .footer {
+    .footer-row {
+      .grid-footer {
+        grid-template-columns: 1fr;
+        .copy {
+          justify-content: center;
+          padding: 0.5rem 0 0.5rem 0;
+        }
+        .social-media {
+          padding: 0.5rem 0 0.5rem 0;
+        }
+        .footer-nav {
+          justify-content: center;
+          padding: 0.5rem 0 0.5rem 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

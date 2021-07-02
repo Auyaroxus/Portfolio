@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="nav">
+    <div class="nav-burger" (click)="toggle()">
+      <div class="nav-burger__part"></div>
+      <div class="nav-burger__part2"></div>
+      <div class="nav-burger__part3"></div>
+    </div>
+    <ul class="nav-ul">
+      <li class="nav-ul__li">
+        <a href="#skills">Skills</a>
+      </li>
+      <li class="nav-ul__li">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="nav-ul__li">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-title">
+    <h1>Hello my nickname is Auyarox. I am junior web developer living in Czech republic.</h1>
+  </div>
+  <div class="responsive-nav" [@isOpen]="show ? 'open' : 'closed'">
+    <a href="#skills" (click)="toggle()">Skills</a>
+    <a href="#projects" (click)="toggle()">Projects</a>
+    <a href="#contact" (click)="toggle()">Contact</a>
+  </div>
+</div>
